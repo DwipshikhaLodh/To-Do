@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">   <!--for the whole sheet of planner-->
+        <div class="head">     <!--for the heading of the planner-->
+            <h1>Daily</h1>
+            <h3>Planner</h3>
+        </div>
+
+        <div class="day"> <!--for list of days-->
+            <input id="btn1" class="btn" type="button" onclick="change(btn1)" value="Mon">
+            <input id="btn2" class="btn" type="button" onclick="change(btn2)" value="Tue">
+            <input id="btn3" class="btn" type="button" onclick="change(btn3)" value="Wed">
+            <input id="btn4" class="btn" type="button" onclick="change(btn4)" value="Thu">
+            <input id="btn5" class="btn" type="button" onclick="change(btn5)" value="Fri">
+            <input id="btn6" class="btn" type="button" onclick="change(btn6)" value="Sat">
+            <input id="btn7" class="btn" type="button" onclick="change(btn7)" value="Sun">
+            <span class="can_day"><i class="fa fa-calendar"></i></span><!-- for icon of calender-->
+        </div>
+
+        <div class="month"><!-- for list of option of months-->
+            <input id="btn8" class="btn" type="button" onclick="change(btn8)" value="Jan">
+            <input id="btn9" class="btn" type="button" onclick="change(btn9)" value="Feb">
+            <input id="btn10" class="btn" type="button" onclick="change(btn10)" value="Mar">
+            <input id="btn11" class="btn" type="button" onclick="change(btn11)" value="Apr">
+            <input id="btn12" class="btn" type="button" onclick="change(btn12)" value="May">
+            <input id="btn13" class="btn" type="button" onclick="change(btn13)" value="Jun">
+            <input id="btn14" class="btn" type="button" onclick="change(btn14)" value="Jul">
+            <input id="btn15" class="btn" type="button" onclick="change(btn15)" value="Aug">
+            <input id="btn16" class="btn" type="button" onclick="change(btn16)" value="Sep">
+            <input id="btn17" class="btn" type="button" onclick="change(btn17)" value="Oct">
+            <input id="btn18" class="btn" type="button" onclick="change(btn18)" value="Nov">
+            <input id="btn19" class="btn" type="button" onclick="change(btn19)" value="Dec">
+            <span class="can_mon"><i class="fa fa-calendar"></i></span><!-- for the calender icon-->
+        </div>
+
+        <form class="task"><!-- section which have an input field & "+" button-->
+            <h3>Task</h3>
+                <input id="task_text" class="task_text" type="text" placeholder="add task here">
+                <button id="add" class="add" type="submit"><i class="fa fa-plus" ></i></button>
+        </form>
+
+        <div class="done"><!-- Done container-->
+            <h3>Done</h3>
+            <ul id="done_" class="done_">
+        <!-- below commented lines will get appended after checked-->        
+        <!--<div class="divdone">
+                <input class="done_pnt"></input>
+                <button class="del"></button>  
+            </div>        -->
+            </ul>
+        </div>
+
+        <div class="todo"><!-- the To-Do container-->
+            <h3>To-Do</h3>
+            <ul id="todo_" class="todo_"></ul>
+            <!-- below lines will get created -->
+            <!--<div class="divtodo"> 
+                    <input class="todo_pnt"></input>  
+                    <button class="edit"></button>
+                    <button class="del"></button>
+                    <button class="cmplt"></button>
+                </div>         -->
+        </div>
+
+        <div class="notes"><!-- the Notes container where note can be taken-->
+            <h3>Notes</h3>
+            <textarea class="note"></textarea>
+        </div>
+
+        <div class="last"><!-- The section which contains button for marking the plan-->
+            <button class="save">Mark The Plan <i class="fa fa-bookmark"></i></button>
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
